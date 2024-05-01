@@ -1,3 +1,11 @@
+:root{
+    --fuente: Poppins;
+    --btncolor: #2A4DD0;
+    --color1: #223344;
+    --color2: #909193;
+    --color3: #F2F9FE;
+}
+
 .poppins-regular {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -11,14 +19,14 @@
 }
 
 body{
-    font-family: Poppins;
+    font-family: var(--fuente) ;
     margin-left: 60px;
     margin-right: 60px;
 }
 nav{
     display: flex;
     align-items: center;
-    font-family: Poppins;
+    font-family: var(--fue);
     justify-content: space-between;
     padding-bottom: 92px;
 }
@@ -34,39 +42,32 @@ nav a{
     text-decoration: none;
     font-weight: bold;
 }
-ul li a{
-    color: #909193;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-ul li a:hover{
-    color: #223344;
-}
+
 nav img{
-    margin-right: 5px;
+    margin-right: 20px;
 }
-.mode{
+.modo{
     display: flex;
     justify-content: space-between;
-    background-color: #223344;
+    background-color: var(--color1);
     border-radius: 15px;
     padding-top: 2px;
     padding-bottom: 2px;
     height: 20;
 }
-#mode{
-    height: 24px;
+#modo{
+    height: 25px;
 }
-.mode img{
-    margin-right: 4px;
-    height: 24px;
+.modo img{
+    margin-right: 5px;
+    height: 25px;
 }
 #sun{
     border-radius: 50%;
     background-color: white;
 }
 #moon{
-    margin-left: 0px;
+    margin-left: 5px;
 }
 main{
     display: flex;
@@ -76,56 +77,51 @@ main{
     flex: 1;
 }
 .section2 img{
-    max-width: 100%;
+    max-width: 100vh;
     height: auto;
 }
 p {
-    color: #909193;
+    color: var(--color2);
 }
-#title{
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #223344;
-    font-size: 13px;
-}
+
 h1{
-    font-size: 60px;
-    color: #223344;
+    font-size: 3.75rem;
+    color: var(--color1);
     margin-top: 12px;
 }
-#btn1{
+#bt1{
     font-family: Poppins;
-    background-color: #2A4DD0;
+    background-color: var(--btncolor);
     border-radius: 10px;
     padding: 20px;
     border: none;
-    color: #F2F9FE;
+    color: var(--color3);
 }
-#btn2{
+#bt2{
     font-family: Poppins;
-    background-color: #FFFFFF;
+    background-color: white;
     border: none;
-    color: #2A4DD0;
+    color: var(--btncolor) ;
     padding: 16px;
     text-decoration: underline;
 }
 button,
 input[type="button"]{
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1rem;
 }
 .botones{
     margin-bottom: 40px;
 }
-.list{
+.lists{
     display: flex;
     align-items: center;
-    color: #909193;
+    color: var(--color2);
     margin-bottom: 90px;
 }
-.list small{
+.lists small{
     margin-right: 20px;
 }
-.list img{
+.lists img{
     margin-right: 8px;
 }
